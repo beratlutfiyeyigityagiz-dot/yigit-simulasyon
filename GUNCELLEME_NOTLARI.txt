@@ -1,0 +1,17 @@
+YİĞİT SİMÜLASYON – BMW & PORSCHE GÜNCELLEMESİ
+
+Dosyalar:
+- index.html: güncellenmiş simülasyon
+- bmw.modelbin: gönderdiğin BMW 330i xDrive GLB modelinin gzip sıkıştırılmış hali
+- porsche.modelbin: gönderdiğin Porsche 918 Spyder GLB modelinin gzip sıkıştırılmış hali
+
+Kurulum:
+1. Üç dosyayı aynı klasöre koy; modelbin dosyalarını yeniden adlandırma.
+2. index.html dosyasını ve iki modelbin dosyasını GitHub deposunun kök dizinine yükle.
+3. GitHub Pages / mevcut HTTPS yayınında index.html aç. GLB modelleri garajdan BMW ve Porsche seçildiğinde otomatik yüklenir.
+
+ÖNEMLİ – çevrim içi yarış davetleri:
+Mevcut HTML istemcisi yarış daveti, kabul/ret, başlangıç ve bitiş mesajlarını WebSocket sunucusuna gönderir. Ancak yüklenen dosyalar arasında sunucunun Node.js/WebSocket kaynak kodu bulunmadığından sunucunun bu race-* mesajlarını aynı odadaki diğer oyunculara ilettiği doğrulanamadı. Sunucu bu özel mesajları oda üyelerine yayınlamıyorsa davet ve ortak geri sayım cihazlar arasında çalışmaz; sunucu tarafında race-invite, race-accept, race-decline, race-start ve race-finish mesajlarını aynı odadaki diğer istemcilere relay etmek gerekir.
+
+Takla: Uçuş modunu açıp havalandıktan sonra sağdaki 🤸 TAKLA düğmesine bas.
+Ödül: Yarış rotasını tamamlayan istemciye 500 sanal oyun parası eklenir. Gerçek para değildir.
